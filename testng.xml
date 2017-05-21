@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" parallel="tests" thread-count="4">
+    <test name="ChromeTestsFirstStep">
+        <parameter name="browser" value="Chrome" />
+        <classes>
+            <class name="de.futterpedia.PetPageTests"/>
+        </classes>
+    </test>
+    <test name="ChromeTestsSecondStep">
+        <parameter name="browser" value="Chrome" />
+        <classes>
+            <class name="de.futterpedia.FoodPetTests"/>
+        </classes>
+    </test>
+    <test name="FireFoxTestsFirstStep">
+        <parameter name="browser" value="Firefox" />
+        <classes>
+            <class name="de.futterpedia.PetPageTests"/>
+        </classes>
+    </test>
+    <test name="FireFoxTestsSecondStep">
+        <parameter name="browser" value="Firefox" />
+        <classes>
+            <class name="de.futterpedia.FoodPetTests"/>
+        </classes>
+    </test>
+    <!--<test name="EdgeTests">-->
+           <!--<parameter name="browser" value="Edge"/>-->
+           <!--<classes>-->
+               <!--<class name="de.futterpedia.PetPageTests"/>-->
+               <!--&lt;!&ndash;<class name="de.futterpedia.FoodPetTests"/>&ndash;&gt;-->
+           <!--</classes>-->
+     <!--</test>-->
+ </suite>
