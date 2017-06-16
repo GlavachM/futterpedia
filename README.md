@@ -1,1 +1,1 @@
-Basic  java automation framework for Futterpedia.
+Basic  java automation framework for Futterpedia project.
